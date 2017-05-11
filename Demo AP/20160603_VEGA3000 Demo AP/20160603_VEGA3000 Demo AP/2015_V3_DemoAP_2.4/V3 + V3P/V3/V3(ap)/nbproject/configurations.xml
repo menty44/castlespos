@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="84">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>EMVCL-Redirect/EMV_appmain.h</itemPath>
+      <itemPath>EMVCL-Redirect/ScreenDispaly.h</itemPath>
+      <itemPath>EMVCL-Redirect/Setting.h</itemPath>
+      <itemPath>EMVCL-Redirect/Transaction.h</itemPath>
+      <itemPath>EMVCL-Redirect/VirtualLED.h</itemPath>
+      <itemPath>EMVCL-Redirect/debug.h</itemPath>
+      <itemPath>GetPin/debug4.h</itemPath>
+      <itemPath>EMVCL-Redirect/emv_cl.h</itemPath>
+      <itemPath>EMVCL-Redirect/graph_p.h</itemPath>
+      <itemPath>GetPin/pcipad.h</itemPath>
+      <itemPath>sharedef.h</itemPath>
+      <itemPath>EMV_contact/utility.h</itemPath>
+      <itemPath>wub_lib.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>EMVCL-Redirect/EMV_appmain.c</itemPath>
+      <itemPath>EMV_contact/EMV_contact_main.c</itemPath>
+      <itemPath>GetPin/GetPin_main.c</itemPath>
+      <itemPath>MSR/MSR_main.c</itemPath>
+      <itemPath>EMVCL-Redirect/ScreenDispaly.c</itemPath>
+      <itemPath>EMVCL-Redirect/Setting.c</itemPath>
+      <itemPath>EMVCL-Redirect/Transaction.c</itemPath>
+      <itemPath>EMVCL-Redirect/VirtualLED.c</itemPath>
+      <itemPath>EMVCL-Redirect/contact.c</itemPath>
+      <itemPath>EMVCL-Redirect/debug.c</itemPath>
+      <itemPath>GetPin/debug4.c</itemPath>
+      <itemPath>main.c</itemPath>
+      <itemPath>EMV_contact/utility.c</itemPath>
+      <itemPath>wub_lib.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>NbMakefile</projectmakefile>
+  <confs>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>Gnueabi|Cygwin</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <commandlineTool>arm-brcm-linux-gnueabi-gcc</commandlineTool>
+          <incDir>
+            <pElem>C:/Program Files/Castles/VEGA3000/include</pElem>
+            <pElem>C:/Program Files (x86)/Castles/VEGA3000/include</pElem>
+          </incDir>
+          <commandLine>"-I${SDKV3INC}" -fsigned-char -Wundef -Wstrict-prototypes -Wno-trigraphs -Wimplicit -Wformat</commandLine>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <commandlineTool>arm-brcm-linux-gnueabi-g++</commandlineTool>
+          <incDir>
+            <pElem>C:/Program Files/Castles/VEGA3000/include</pElem>
+            <pElem>C:/Program Files (x86)/Castles/VEGA3000/include</pElem>
+          </incDir>
+          <commandLine>"-I${SDKV3INC}" -fsigned-char -Wundef -Wno-trigraphs -Wimplicit -Wformat</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>dist/V3/App/V3_Demo_V3P_24</output>
+          <commandlineTool>arm-brcm-linux-gnueabi-g++</commandlineTool>
+          <linkerLibItems>
+            <linkerLibLibItem>caethernet</linkerLibLibItem>
+            <linkerLibLibItem>cafont</linkerLibLibItem>
+            <linkerLibLibItem>cafs</linkerLibLibItem>
+            <linkerLibLibItem>cakms</linkerLibLibItem>
+            <linkerLibLibItem>calcd</linkerLibLibItem>
+            <linkerLibLibItem>camodem</linkerLibLibItem>
+            <linkerLibLibItem>capmodem</linkerLibLibItem>
+            <linkerLibLibItem>caprt</linkerLibLibItem>
+            <linkerLibLibItem>cartc</linkerLibLibItem>
+            <linkerLibLibItem>cauart</linkerLibLibItem>
+            <linkerLibLibItem>cauldpm</linkerLibLibItem>
+            <linkerLibLibItem>causbh</linkerLibLibItem>
+            <linkerLibLibItem>cagsm</linkerLibLibItem>
+            <linkerLibLibItem>cabarcode</linkerLibLibItem>
+            <linkerLibLibItem>pthread</linkerLibLibItem>
+            <linkerLibLibItem>dl</linkerLibLibItem>
+            <linkerLibLibItem>caclvw</linkerLibLibItem>
+            <linkerLibLibItem>catls</linkerLibLibItem>
+            <linkerLibLibItem>ctosapi</linkerLibLibItem>
+            <linkerLibLibItem>crypto</linkerLibLibItem>
+            <linkerLibLibItem>curl</linkerLibLibItem>
+            <linkerLibLibItem>ssl</linkerLibLibItem>
+            <linkerLibLibItem>z</linkerLibLibItem>
+            <linkerLibLibItem>freetype</linkerLibLibItem>
+            <linkerLibLibItem>caaep</linkerLibLibItem>
+            <linkerLibLibItem>cavap</linkerLibLibItem>
+            <linkerLibLibItem>caclentry</linkerLibLibItem>
+            <linkerLibLibItem>caclmdl</linkerLibLibItem>
+            <linkerLibLibItem>caemvl2</linkerLibLibItem>
+            <linkerLibLibItem>caemvl2ap</linkerLibLibItem>
+            <linkerLibLibItem>campp</linkerLibLibItem>
+            <linkerLibLibItem>cavpw</linkerLibLibItem>
+            <linkerLibLibItem>capcipad</linkerLibLibItem>
+          </linkerLibItems>
+          <commandLine>-L . "-L${SDKV3LIB}" "-L${SDKV3LIBN}"</commandLine>
+        </linkerTool>
+      </compileType>
+    </conf>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>Gnueabi|Cygwin</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <commandlineTool>arm-brcm-linux-gnueabi-gcc</commandlineTool>
+          <incDir>
+            <pElem>C:/Program Files/Castles/VEGA3000/include</pElem>
+            <pElem>C:/Program Files (x86)/Castles/VEGA3000/include</pElem>
+          </incDir>
+          <commandLine>"-I${SDKV3INC}" -fsigned-char -Wundef -Wstrict-prototypes -Wno-trigraphs -Wimplicit -Wformat</commandLine>
+        </cTool>
+        <ccTool>
+          <commandlineTool>arm-brcm-linux-gnueabi-g++</commandlineTool>
+          <incDir>
+            <pElem>C:/Program Files/Castles/VEGA3000/include</pElem>
+            <pElem>C:/Program Files (x86)/Castles/VEGA3000/include</pElem>
+          </incDir>
+          <commandLine>"-I${SDKV3INC}" -fsigned-char -Wundef -Wno-trigraphs -Wimplicit -Wformat</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>dist/V3/Debug/V3_Intergrated</output>
+          <commandlineTool>arm-brcm-linux-gnueabi-g++</commandlineTool>
+          <linkerLibItems>
+            <linkerLibLibItem>caethernet</linkerLibLibItem>
+            <linkerLibLibItem>cafont</linkerLibLibItem>
+            <linkerLibLibItem>cafs</linkerLibLibItem>
+            <linkerLibLibItem>cakms</linkerLibLibItem>
+            <linkerLibLibItem>calcd</linkerLibLibItem>
+            <linkerLibLibItem>camodem</linkerLibLibItem>
+            <linkerLibLibItem>capmodem</linkerLibLibItem>
+            <linkerLibLibItem>caprt</linkerLibLibItem>
+            <linkerLibLibItem>cartc</linkerLibLibItem>
+            <linkerLibLibItem>cauart</linkerLibLibItem>
+            <linkerLibLibItem>cauldpm</linkerLibLibItem>
+            <linkerLibLibItem>causbh</linkerLibLibItem>
+            <linkerLibLibItem>cagsm</linkerLibLibItem>
+            <linkerLibLibItem>cabarcode</linkerLibLibItem>
+            <linkerLibLibItem>pthread</linkerLibLibItem>
+            <linkerLibLibItem>dl</linkerLibLibItem>
+            <linkerLibLibItem>caclvw</linkerLibLibItem>
+            <linkerLibLibItem>catls</linkerLibLibItem>
+            <linkerLibLibItem>ctosapi</linkerLibLibItem>
+            <linkerLibLibItem>crypto</linkerLibLibItem>
+            <linkerLibLibItem>curl</linkerLibLibItem>
+            <linkerLibLibItem>ssl</linkerLibLibItem>
+            <linkerLibLibItem>z</linkerLibLibItem>
+            <linkerLibLibItem>freetype</linkerLibLibItem>
+          </linkerLibItems>
+          <commandLine>-L . "-L${SDKV3LIB}" "-L${SDKV3LIBN}"</commandLine>
+        </linkerTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>
